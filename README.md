@@ -1,9 +1,12 @@
 # landing-page-1
 
-# Design Resources:
+My website implementation of the poly landing page design.
 
-# https://www.instagram.com/icreates.design/
+## Design Resources:
 
-# https://www.instagram.com/p/CNFDVZ1H-XG/
+https://www.instagram.com/icreates.design/
+https://www.instagram.com/p/CNFDVZ1H-XG/
 
-# Credits to @icreates.design for allowing me to use her design to practice building a landing page.
+## Credits:
+
+Thank you @icreates.design for letting me use your design to practice building a landing page!
