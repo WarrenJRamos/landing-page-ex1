@@ -8,30 +8,36 @@
     <title>poly</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
+        <nav class="navigation">
           <div class="logo">
             <a href="">poly</a>
           </div>
-          <ul>
-            <li><a href="">What's new</a></li>
-            <li><a href="">Collections</a></li>
-            <li><a href="">Gifts</a></li>
-            <li><a href="">Arts of Sustainability</a></li>
+          <ul class="nav">
+            <li class="nav__item"><a href="">What's new</a></li>
+            <li class="nav__item"><a href="">Collections</a></li>
+            <li class="nav__item"><a href="">Gifts</a></li>
+            <li class="nav__item"><a href="">Arts of Sustainability</a></li>
           </ul>
-          <button class="cart">cart</button>
-          <button class="language-selector">NZD</button>
+          <div class="actions">
+            <button class="cart">cart</button>
+            <button class="language-selector">NZD</button>
+          </div>
         </nav>
         <div class="header">
-          <h1>from plastic to magic</h1>
-          <p>
-            We create custom hand bags and wallets made of mostly plastics and a
-            mix of other recycled materials. This coupled by your personal
-            touch, every Poly product ends up being completely unique.
-          </p>
-          <button class="cta-primary">Design a bag</button>
-          <button class="cta-secondary">How it works</button>
+          <h1 class="header__tagline">from plastic to magic</h1>
+          <div class="header__bottom">
+            <p class="header__content">
+              We create custom hand bags and wallets made of mostly plastics and
+              a mix of other recycled materials. This coupled by your personal
+              touch, every Poly product ends up being completely unique.
+            </p>
+            <div class="cta-group">
+              <button class="header__cta--primary">Design a bag</button>
+              <button class="header__cta--secondary">How it works</button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
