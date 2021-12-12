@@ -5,14 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@500&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
     <title>poly</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="navigation">
+          <button class="hamburger">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+          </button>
           <div class="logo">
-            <a href="">poly</a>
+            <a href=""
+              ><img src="logo.svg" alt="logo" />
+              <p>poly</p></a
+            >
           </div>
           <ul class="nav">
             <li class="nav__item"><a href="">What's new</a></li>
@@ -21,35 +34,45 @@
             <li class="nav__item"><a href="">Arts of Sustainability</a></li>
           </ul>
           <div class="actions">
-            <button class="cart">cart</button>
-            <button class="language-selector">NZD</button>
+            <button class="cart"><img src="cart.svg" alt="cart" /></button>
+            <button class="language-selector">
+              <img src="flag.png" alt="flag" />
+              <p>NZD</p>
+              <img src="dropdownArrow.svg" alt="dropdown" />
+            </button>
           </div>
         </nav>
-        <div class="header">
-          <h1 class="header__tagline">from plastic to magic</h1>
-          <div class="header__bottom">
-            <p class="header__content">
+        <div class="headline">
+          <h1 class="headline__tagline">
+            from <span class="orange">plastic</span> to
+            <span class="green">magic</span>
+          </h1>
+          <div class="headline__bottom">
+            <p class="headline__content">
               We create custom hand bags and wallets made of mostly plastics and
               a mix of other recycled materials. This coupled by your personal
               touch, every Poly product ends up being completely unique.
             </p>
             <div class="cta-group">
-              <button class="header__cta--primary">Design a bag</button>
-              <button class="header__cta--secondary">How it works</button>
+              <button class="headline__cta--primary">Design a bag</button>
+              <button class="headline__cta--secondary">How it works</button>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <footer className="footer">
+    <button class="live"><img src="livechat.png" alt="livechat" /></button>
+    <footer class="footer">
       <div class="container">
-        <p>
-          Credits to
-          <a href="https://www.instagram.com/icreates.design/"
-            >@icreates.design</a
-          >
-          for letting me implement her design!
-        </p>
+        <div class="credits">
+          <p>
+            Credits to
+            <a href="https://www.instagram.com/icreates.design/"
+              >@icreates.design</a
+            >
+            for letting me implement her design!
+          </p>
+        </div>
       </div>
     </footer>
   </body>
