@@ -1,4 +1,7 @@
 $hero-img: url(background.png);
+$primary-color: red;
+$overlay-color: lightgreen;
+$menu-speed: 0.75s;
 
 *,
 *::after,
@@ -31,9 +34,9 @@ button {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 129px;
 }
 
 .navigation {
@@ -41,30 +44,6 @@ button {
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
-
-  /* hamburger */
-  .hamburger {
-    z-index: 5555;
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: all 2s ease-in;
-
-    .line-one,
-    .line-two,
-    .line-three {
-      height: 6px;
-      width: 38px;
-      background-color: #3fa644;
-    }
-
-    .line-one,
-    .line-two {
-      margin-bottom: 5px;
-    }
-  }
 
   .logo {
     a {
@@ -79,7 +58,7 @@ button {
   .nav {
     display: flex;
     list-style: none;
-    gap: 3rem;
+    gap: 50px;
     font-size: 18px;
     line-height: 24px;
 
@@ -111,14 +90,16 @@ button {
   }
 }
 
-.headline {
-  margin-top: 20px;
+.hero {
+  margin-top: 41px;
+
   &__tagline {
     text-transform: uppercase;
     font-size: 96px;
     line-height: 127px;
     max-width: 456px;
     color: #01597b;
+    margin-bottom: 32px;
 
     .orange {
       color: #dd5d1d;
@@ -130,7 +111,7 @@ button {
   }
 
   &__bottom {
-    height: 215px;
+    min-height: 215px;
     display: flex;
     gap: 11rem;
   }
@@ -153,6 +134,11 @@ button {
   &__cta--secondary {
     font-size: 24px;
     flex-basis: 70px;
+    transition: opacity 1s ease-in;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__cta--primary {
